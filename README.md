@@ -3,6 +3,8 @@ Code I've written for its own sake
 
 In decreasing order of time investment.
 
+Ukkonen is an implementation of Ukkonen's algorithm. Most of the tutorials and python files on the internet this seem to fail to consider edge cases. Figuring this out on my own took way too long. It runs in linear time up to inputs of length around a million, the longest my computer can handle. I imagine it's linear for all input lengths, but can't prove it. As far as I can tell, it never throws an error, even with long strings. When using it to find the longest common substring, it gets the right answer by creating a suffix tree for a string of length order 10^5; I think this is decent evidence of correctness. See my rosalind profile https://rosalind.info/users/cammyholt/. The problem that inspired this project was 'lcsm'.
+
 'Code' is a folder containing a chess bot (chess.py) I built from scratch and the images needed to show the board. It has a GUI that shows games and allows users to play moves by tapping squares. The bot's hyperparameters can easily be modified to change its playstyle. It seems to be better than between 5-10% of the active players on chess.com. It would easily beat an absoloute beginner. If the program is run as it is, you will play white against my cpu. Press the square of the piece you would like to move, then the square you would like to move it to, then 'submit move'. Press 'next move' to see the cpu's response, then repeat. Here is the PGN of a game it played against a human. My bot was playing with the white pieces.
 
 1. d4 d5 2. e3 Nc6 3. Bb5 f6 4. Qh5+ g6 5. Qd1 e5 6. Nc3 Be6 7. Nf3 a6 8. Bxc6+
