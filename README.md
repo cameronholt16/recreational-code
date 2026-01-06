@@ -1,5 +1,5 @@
 # recreational-code
-Code I've written for its own sake
+Code I've written for its own sake. This was all done pre-LLMs.
 
 In decreasing order of time investment.
 
